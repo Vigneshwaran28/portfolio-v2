@@ -12,11 +12,8 @@ import {SplitterModule} from 'primeng/splitter';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import {DialogModule} from 'primeng/dialog';
 import { ButtonModule } from 'primeng/button';
-import {OrganizationChartModule} from 'primeng/organizationchart';
+import {RouterModule} from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SkillsComponent } from './main/skills/skills.component';
-import {ToastModule} from 'primeng/toast';
-import {PanelModule} from 'primeng/panel';
 
 @NgModule({
   declarations: [
@@ -26,8 +23,7 @@ import {PanelModule} from 'primeng/panel';
     FooterComponent,
     HeroSectionComponent,
     EducationComponent,
-    PageNotFoundComponent,
-    SkillsComponent
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -37,10 +33,7 @@ import {PanelModule} from 'primeng/panel';
     BrowserModule,
     BrowserAnimationsModule,
     DialogModule,
-    ButtonModule,
-    ToastModule,
-    PanelModule,
-    OrganizationChartModule
+    ButtonModule
 
   ],
   providers: [],

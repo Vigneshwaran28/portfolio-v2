@@ -5,11 +5,9 @@ import * as path from 'path';
 import { MainComponent } from './main/main.component';
 import { HeroSectionComponent } from './main/hero-section/hero-section.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { SkillsComponent } from './main/skills/skills.component';
 
 const routes: Routes = [
   {path:'education',component:EducationComponent},
-  {path:'skills',component:SkillsComponent},
   {path:'',component:HeroSectionComponent},
   {path:'**',component:PageNotFoundComponent}
 ];
