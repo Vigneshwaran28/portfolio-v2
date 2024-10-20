@@ -1,0 +1,357 @@
+.skill-title {
+    margin-top: 10px;
+}
+
+.skill-section {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 5px 15px;
+    /* max-height: 100vh; */
+    box-sizing: border-box;
+}
+
+.skill-header {
+    border-radius: 22px;
+    background-color: #d5c8b5;
+    display: flex;
+    gap: 15px;
+    color: #000;
+    justify-content: space-between;
+    padding: 12px 36px;
+    font: 400 28px Italiana, sans-serif;
+}
+
+.col-lg {
+    width: 90rem !important;
+}
+
+
+
+.skill-timeline {
+    border-radius: 22px;
+    background-color: #d5c8b5;
+    display: flex;
+    margin-top: 16px;
+    width: 100%;
+    height: auto;
+    /* overflow: auto; */
+    flex-direction: column;
+    align-items: start;
+    padding: 36px 30px;
+    box-sizing: border-box;
+}
+/* TODO animatoionnnnn */
+/* Copy this code after the above code */
+@keyframes customAni {
+    0% {
+      animation-timing-function: ease-in;
+      opacity: 1;
+      transform: translateY(-45px);
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    40% {
+      animation-timing-function: ease-in;
+      transform: translateY(-24px);
+    }
+  
+    65% {
+      animation-timing-function: ease-in;
+      transform: translateY(-12px);
+    }
+  
+    82% {
+      animation-timing-function: ease-in;
+      transform: translateY(-6px);
+    }
+  
+    93% {
+      animation-timing-function: ease-in;
+      transform: translateY(-4px);
+    }
+  
+    25%,
+    55%,
+    75%,
+    87% {
+      animation-timing-function: ease-out;
+      transform: translateY(0px);
+    }
+  
+    100% {
+      animation-timing-function: ease-out;
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  /* ---------------------------------------- */
+  /* Copy this code after the above code */
+@keyframes customAni2 {
+    0%,
+    100% {
+      transform: rotate(0deg);
+      transform-origin: 50% 0;
+    }
+  
+    10% {
+      transform: rotate(2deg);
+    }
+  
+    20%,
+    40%,
+    60% {
+      transform: rotate(-4deg);
+    }
+  
+    30%,
+    50%,
+    70% {
+      transform: rotate(4deg);
+    }
+  
+    80% {
+      transform: rotate(-2deg);
+    }
+  
+    90% {
+      transform: rotate(2deg);
+    }
+  }
+  /* Copy this code after the above code */
+@keyframes customAni3 {
+    0% {
+      transform: translate(0);
+    }
+  
+    20% {
+      transform: translate(-2px, 2px);
+    }
+  
+    40% {
+      transform: translate(-2px, -2px);
+    }
+  
+    60% {
+      transform: translate(2px, 2px);
+    }
+  
+    80% {
+      transform: translate(2px, -2px);
+    }
+  
+    100% {
+      transform: translate(0);
+    }
+  }
+  
+  
+/* TODO animatoionnnnn */
+
+/* data graph design */
+:host ::ng-deep .p-organizationchart {
+
+    /* Main skill box (Rectangle) */
+    .SkillS1 {
+
+        background-color: #8b4513;
+        /* Dark brown */
+        color: #ffffff;
+        border-radius: 8px;
+        /* Rounded corners */
+        padding: 1.5rem;
+        font-size: 20px;
+        margin-bottom: 1rem;
+        /* Space between sections */
+        position: relative;
+        /* For positioning children */
+        animation: customAni 6s ease 0s  normal none;
+    }
+
+    /* Secondary box (Rectangle) */
+    .SecondaryBox {
+        background-color: #d68c45;
+        /* Lighter brown for subcategories */
+        color: #ffffff;
+        border: 3px dotted #000000;
+        padding: 1.5rem;
+        border-radius: 8px;
+        /* Rounded corners */
+        font-weight: 700;
+        margin: 1rem 0;
+        /* Add margin to space out sub-skills */
+        position: relative;
+        /* For positioning children */
+        animation: customAni2 2s ease-in 0s 1 normal none;
+    }
+
+    /* Skill (Ellipse) */
+    .p-skill {
+        background-color: #f4a261;
+        /* Light orange for general skills */
+        padding: 1rem;
+        border: white dashed 2px;
+        border-radius: 10px;
+        /* Makes it an ellipse */
+        font-weight: bold;
+        color: #000;
+        margin: 0.5rem 0;
+        display: inline-block;
+        /* Allows block styling */
+        text-align: center;
+        /* Center text */
+        width: 120px;
+        /* Fixed width for the ellipse */
+        height: 60px;
+        /* Fixed height for the ellipse */
+        line-height: 25px;
+        /* Vertically center text */
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        animation: customAni3 2s linear 0s 1 alternate forwards;
+    }
+    .p-skill:hover {
+        background-color: #f4a261;
+        /* Light orange for general skills */
+        padding: 1rem;
+        border: rgb(0, 0, 0) dashed 2px;
+        border-radius: 10px;
+        /* Makes it an ellipse */
+        font-weight: bold;
+        color: #f4a261!important;
+        margin: 0.5rem 0;
+        display: inline-block;
+        /* Allows block styling */
+        text-align: center;
+        /* Center text */
+        width: 120px;
+        /* Fixed width for the ellipse */
+        height: 60px;
+        /* Fixed height for the ellipse */
+        line-height: 25px;
+        /* Vertically center text */
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    /* Python-related skill boxes (Ellipse) */
+    .ellipse {
+        background-color: #f4a261;
+        padding: 1rem;
+        font-weight: 700;
+        border-radius: 50%;
+        /* Makes it an ellipse */
+        margin: 1rem 0;
+        width: 120px;
+        height: 60px;
+        line-height: 25px;
+        border: 4px inset #ff6550;
+    }
+
+    .diamond {
+        background-color: #264653;
+        /* Dark green for tools */
+        padding: 1rem;
+        color: #fff;
+        border-radius: 10px;
+        /* Standard rectangle for rhombus-like effect */
+        margin: 0.5rem 0;
+        position: relative;
+        /* For positioning */
+        transform: rotate(45deg);
+        /* Rotate to resemble a rhombus */
+        width: 100px;
+        /* Set width for rhombus shape */
+        height: 100px;
+        /* Set height for rhombus shape */
+        display: flex;
+        /* Use flexbox for center alignment */
+        align-items: center;
+        /* Vertically center text */
+        justify-content: center;
+        /* Horizontally center text */
+        transform-origin: center;
+        /* Center rotation */
+    }
+
+    .python {
+        background-color: #f4a261;
+        border-radius: 22px 0px 22px 0px;
+        font-weight: bold;
+        border: 6px outset #ffffff;
+        color: whitesmoke;
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+    }
+
+    .pythonBox {
+        background-color: #9b6a32;
+        /* Darker brown for Python libraries */
+        color: whitesmoke;
+        padding: 1rem;
+        font-weight: 700;
+        border-radius: 50%;
+        /* Makes it an ellipse */
+        margin: 0.5rem 0;
+        width: 120px;
+        height: 60px;
+        line-height: 60px;
+    }
+
+    /* Tool categories (Rhombus) */
+    .p-tool {}
+
+    /* Adjusting the text back to original orientation */
+    .p-tool span {
+        transform: rotate(-45deg);
+        /* Rotate back to read text */
+    }
+
+    /* Additional child elements for better spacing and hierarchy */
+    .p-organizationchart .node-content {
+        border: 1px solid #495ebb;
+        /* Border for content nodes */
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .p-organizationchart .node-header {
+        background-color: #495ebb;
+        color: #ffffff;
+        padding: 0.5rem 1rem;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+
+    /* Hover effects for general interactivity */
+    .p-organizationchart .node-header:hover {
+        background-color: #627abb;
+        /* Lighter blue on hover */
+        transition: 0.3s ease-in-out;
+    }
+
+    /* Responsive adjustments for smaller screens */
+    @media (max-width: 768px) {
+
+        .p-skill,
+        .python,
+        .pythonBox,
+        .p-tool {
+            width: 80px;
+            /* Adjusted width for mobile */
+            height: 40px;
+            /* Adjusted height for mobile */
+            line-height: 40px;
+            /* Center text for mobile */
+        }
+    }
+}
