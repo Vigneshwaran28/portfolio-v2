@@ -15,7 +15,6 @@ export class SkillsComponent implements OnInit {
       {
         label: 'Skills',
         type: 'category',
-        icon: PrimeIcons.PLUS,
         styleClass: 'SkillS1',
         expanded: true,
         data: { name: 'Acquired Skills' },
@@ -78,7 +77,23 @@ export class SkillsComponent implements OnInit {
               {
                 label: 'Core Java',
                 type: 'skill',
-                styleClass: 'p-skill'
+                styleClass: 'p-skill',
+                expanded:true,
+                children:[
+                  {
+                    label: 'Database',
+                    type: 'category',
+                    styleClass: 'SecondaryBox',
+                    expanded: true,
+                    data: { name: 'Backend Technologies' },
+                    children: [
+                      {
+                        label: 'MySQL',
+                        styleClass: 'p-skill'
+                      }
+                    ]
+                  },
+                ]
               }
             ]
           },
@@ -135,19 +150,7 @@ export class SkillsComponent implements OnInit {
               }
             ]
           },
-          {
-            label: 'Database',
-            type: 'category',
-            styleClass: 'SecondaryBox',
-            expanded: true,
-            data: { name: 'Backend Technologies' },
-            children: [
-              {
-                label: 'MySQL',
-                styleClass: 'p-skill'
-              }
-            ]
-          },
+          
           {
             label: 'Software Tools',
             type: 'category',
@@ -192,5 +195,4 @@ export class SkillsComponent implements OnInit {
       }
     ];
   }
-
 }

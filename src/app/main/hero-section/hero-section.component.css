@@ -7,7 +7,8 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    padding: 12px 15px;
+    padding: 12px 12px;
+    
 }
 
 .div {
@@ -28,7 +29,7 @@
 .div-2 {
     display: flex;
     align-self: start;
-    margin-top: 11px;
+    margin-top: 8px;
     gap: 15px;
     font-size: 24px;
     white-space: nowrap;
@@ -39,7 +40,7 @@
 }
 
 .div-3 {
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .div-4 {
@@ -485,8 +486,8 @@
     transition: 200ms;
   }
   .img-container {
-    height: 358px;
-    width: 375px;
+    height: 355px;
+    width: 332px;
     border-radius: 22px;
     background-image: url('../../../assets/images/vignesh_dp.png');
     background-size: cover;
@@ -1050,3 +1051,7 @@
 
 
 
+a{
+  text-decoration: none;
+  color: #000;
+}

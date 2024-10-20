@@ -1,12 +1,14 @@
 .skill-title {
     margin-top: 10px;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 200;
 }
 
 .skill-section {
     background-color: #000;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    overflow: auto;
     padding: 5px 15px;
     /* max-height: 100vh; */
     box-sizing: border-box;
@@ -20,7 +22,8 @@
     color: #000;
     justify-content: space-between;
     padding: 12px 36px;
-    font: 400 28px Italiana, sans-serif;
+   
+
 }
 
 .col-lg {
@@ -36,10 +39,10 @@
     margin-top: 16px;
     width: 100%;
     height: auto;
-    /* overflow: auto; */
+    overflow: auto;
     flex-direction: column;
     align-items: start;
-    padding: 36px 30px;
+    /* padding: 20px 30px; */
     box-sizing: border-box;
 }
 /* TODO animatoionnnnn */
@@ -154,8 +157,8 @@
 /* TODO animatoionnnnn */
 
 /* data graph design */
-:host ::ng-deep .p-organizationchart {
 
+:host ::ng-deep {
     /* Main skill box (Rectangle) */
     .SkillS1 {
 
@@ -164,13 +167,15 @@
         color: #ffffff;
         border-radius: 8px;
         /* Rounded corners */
-        padding: 1.5rem;
+        /* padding: 1.5rem; */
         font-size: 20px;
         margin-bottom: 1rem;
+        margin-top: 1rem;
         /* Space between sections */
         position: relative;
         /* For positioning children */
         animation: customAni 6s ease 0s  normal none;
+        border: wheat dashed 2px;
     }
 
     /* Secondary box (Rectangle) */
@@ -354,4 +359,4 @@
             /* Center text for mobile */
         }
     }
-}
+  }
