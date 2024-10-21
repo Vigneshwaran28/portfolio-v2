@@ -1,27 +1,46 @@
-# Portfolio
+# Personal Portfolio Website
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.13.
+This is a personal portfolio website built using **Angular** and **PrimeNG**. It showcases various aspects of my professional profile, including my skills, projects, testimonials, and contact information. The website features a modern, vibrant design with dynamic content, responsive layouts, and interactive components.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **About Me**: A brief introduction and overview of my professional journey.
+- **Skills Section**: A visual representation of my technical skills and expertise.
+- **Projects**: Showcase of the projects I’ve worked on, along with descriptions and links to their live demos or GitHub repositories.
+- **Contact Me**: A fully functional form that allows visitors to send me messages directly.
+- **Responsive Design**: Ensures the website is fully accessible on various devices (desktop, tablet, and mobile).
+- **Interactive UI Components**: Components like date pickers, modal dialogs, and form validation powered by **PrimeNG**.
 
-## Code scaffolding
+## Tech Stack
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Angular**: The frontend framework used for developing the website.
+- **PrimeNG**: A popular Angular UI component library used to enhance the user interface with components such as forms, calendars, buttons, and modal dialogs.
+- **CSS**: Styling for a modern, professional, and visually appealing layout.
+- **HTML5**: The structure of the website.
 
-## Build
+## Key Libraries and Packages
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **PrimeNG**: A rich set of UI components to build responsive web applications.
+- **Angular Animations**: Used for smooth transitions and animations within the UI.
+- **Bootstrap**: For additional styling and responsive design enhancements.
+- **FontAwesome**: For scalable vector icons.
+- **Google Fonts**: To bring a modern and clean typography to the website.
 
-## Running unit tests
+## Getting Started
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+To run this project locally, follow the steps below:
 
-## Running end-to-end tests
+### Prerequisites
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Ensure you have the following installed on your system:
 
-## Further help
+- [Node.js](https://nodejs.org/) (version 16+ recommended)
+- [Angular CLI](https://angular.io/cli)
+- [PrimeNG](https://www.primefaces.org/primeng/)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Vigneshwaran28/portfolio-v2.git
