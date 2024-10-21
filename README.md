@@ -38,9 +38,4 @@ Ensure you have the following installed on your system:
 - [Angular CLI](https://angular.io/cli)
 - [PrimeNG](https://www.primefaces.org/primeng/)
 
-### Installation
 
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/portfolio-website.git
