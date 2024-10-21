@@ -1,0 +1,103 @@
+<section class="education-section">
+  <header class="education-header">
+    <h1 class="education-title">Educations</h1>
+    <a class="EduLink" routerLink="/" routerLinkActive="active">
+      <i class="pi pi-home" style="font-size: 2.5rem; margin: 5px"> </i
+    ></a>
+  </header>
+  <main class="education-timeline">
+    <div class="timeline container">
+      <div class="timeline-month">
+        {{ start }}
+      </div>
+      <div class="timeline-section">
+        <div class="timeline-date">
+          {{ y1 }}
+        </div>
+        <div class="row">
+          <div class="col-lg">
+            <div class="timeline-box">
+              <div class="box-title">
+                <i class="fas fa-graduation-cap" aria-hidden="true"></i
+                >{{ pgCollege }}
+                <p class="degree">{{ master }}</p>
+              </div>
+              <div class="box-content">
+                <div class="box-item">{{ mcaContent }}</div>
+                <div class="box-item"><b> CGPA</b>: 7.89</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-section">
+        <div class="timeline-date">
+          {{ y2 }}
+        </div>
+        <div class="row">
+          <div class="col-lg">
+            <div class="timeline-box">
+              <div class="box-title">
+                <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                {{ ugCollege }}
+                <p class="degree">{{ bachelor }}</p>
+              </div>
+              <div class="box-content">
+                <div class="box-item">{{ bcaContent }}</div>
+                <div class="box-item"><b> CGPA</b>: 8.5</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-section">
+        <div class="timeline-date">
+          {{ y3 }}
+        </div>
+        <div class="row">
+          <div class="col-lg">
+            <div class="timeline-box">
+              <div class="box-title">
+                <i class="fas fa-graduation-cap" aria-hidden="true"></i> Bishop
+                Heber Higher Secondary School
+                <p class="degree">Grade I to XII</p>
+              </div>
+              <div class="box-content">
+                <div class="box-item">Started my education journey...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <section id="section3" class="container">
+      <div class="Heading">
+        <p class="h1 text-center">Certifications</p>
+      </div>
+      <div class="container certificate">
+        <div class="row">
+          <div class="col-md-4" *ngFor="let cert of certifications">
+            <a target="_blank" [href]="cert.link">
+              <article class="card">
+                <div>
+                  <img
+                    [src]="cert.imgSrc"
+                    alt="Certification logo"
+                    class="card__hero img-fluid"
+                  />
+                  <header class="card__hero-header">
+                    <span>{{ cert.title }}</span>
+                    <div class="card__icon"></div>
+                  </header>
+                  <p class="card__job-title">{{ cert.institution }}</p>
+                </div>
+              </article>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</section>
