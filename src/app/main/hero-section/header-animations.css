@@ -108,9 +108,7 @@
   display: block;
   width: 80%; /* Adjust this to control the width of each card */
 }
-.concard3, .concard2{
-  width:100%;
-}
+
 .box{
   
 }
@@ -656,3 +654,6 @@ p {
   filter: blur(10px);
   transform: scale(0.9, 0.9);
 }
+
+
+

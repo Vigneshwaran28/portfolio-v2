@@ -14,7 +14,7 @@
                       <div class="card-front">
                         <div class="nine">
                           <h1>
-                            Wellcome!<span
+                            Welcome!<span
                               >You've finally tracked me down.</span
                             >
                           </h1>
@@ -134,39 +134,16 @@
             <div class="div-15">
              <div class="cards">
                <div class="containerCard">
-                <div class="box">
-                 <a href="https://github.com/Vigneshwaran28/diary_note" target="_blank" >
+                <div class="box mt-2" *ngFor="let x of projects">
+                 <a href="{{x.link}}" target="_blank" >
                    <div>
-                    <strong>Digital Diary</strong>
-                    <p>Personal Project</p>
+                    <strong>{{x.name}}</strong>
+                    <p>{{x.type}}</p>
                     <span class="text-light">
-                      This project aims to create a digital platform for daily journaling, facilitating the documentation of daily incidents and events to preserve memories in written form."
+                      {{x.desc}}
                       </span>
                   </div>
                  </a>
-                </div>
-                <div class="containerCard concard2">
-                  <div class="box">
-                    <a href="https://github.com/Vigneshwaran28/Job-Portal-Management/tree/main">
-                      <div>
-                        <strong>Job Portal Management</strong>
-                        <p>Academic Project</p>
-                        <span class="text-light">This project is dedicated to constructing a robust system for managing job portals. It aims to streamline the process of organizing job listings, applicant profiles, and recruitment procedures, enhancing efficiency and effectiveness in hiring workflows..
-                        </span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="containerCard concard3">
-                  <div class="box">
-                  <div>
-                    <a href="https://vigneshwaran28.github.io/tourOfHero/" target="_blank">
-                      <strong>Tour Of Heroes</strong>
-                      <p>Full Stack Project</p>
-                      <span class="text-light">Angular and Django with login authentication and much more fun...</span>
-                    </a>
-                  </div> 
-                  </div>
                 </div>
              </div>
               </div>
